@@ -1,0 +1,127 @@
+body{
+    padding:0;
+    margin:0;
+    font-family: sans-serif;
+    color:#333333;
+}
+.navbar{
+    background-color: #2F80ED ;
+    padding-top:20px;
+    padding-bottom:10px;
+    padding-left:25px;
+    box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.23);
+
+}
+
+img{
+    float:left;
+}
+h4, h2{
+    margin-block-end:.3em;
+}
+#sidegrid{
+    display: flex;
+    padding-right:25px;
+    font-size: 1.25em;
+}
+#sidegrid img{
+    width:75%;
+    padding: 3rem;
+    padding-top: 1rem;
+}
+#right{
+    float:right;
+}
+
+#half-container{
+    margin-left:20px;
+    display: flex;
+    font-size: 1.25em;
+
+}
+.half{
+    width:40%;
+    font-size:1.25em; 
+    margin-right: 2em;
+}
+h2{
+    padding-left:25px;
+    background-color:gainsboro;
+    margin-bottom: 0;
+    padding-top:10px;
+}
+#lostpres{
+    display: flex;    
+    font-size: 1.5em;
+    padding-left:25px;
+    background-color: gainsboro;
+}
+#lostpres h4{
+    margin-block-start: .5em;
+        margin-right: 2rem;
+
+        font-weight:normal; 
+}
+#lostpres img{
+    width: 15rem;
+    margin-right: 2rem;
+    box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.23);
+
+}
+
+/* Custom checkmark */
+.container {
+  display: inline-block;
+  position: relative;
+  padding-left: 35px;
+padding-right: 15px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+    color: white;
+}
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+.container input:checked ~ .checkmark {
+  color: #2196F3;
+}
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.container input:checked ~ .checkmark:after {
+  display: block;
+    border-color:red;
+}
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
